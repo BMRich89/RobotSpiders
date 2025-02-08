@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RobotSpiders
+﻿namespace RobotSpiders.Helpers
 {
     internal class IntInputPrompt
     {
@@ -15,7 +9,7 @@ namespace RobotSpiders
         /// <param name="prompt"></param>
         /// <param name="invalidInputMessage"></param>
         /// <returns>parsed input as int</returns>
-        public static int InputPrompt(string prompt,string invalidInputMessage) 
+        public static int InputPrompt(string prompt, string invalidInputMessage)
         {
             bool inputNeeded = true;
             int parsedInput = 0;
@@ -47,7 +41,7 @@ namespace RobotSpiders
         /// <param name="upperLimit"></param>
         /// <param name="notAcceptibleRangeMessage"></param>
         /// <returns>parsed input as int</returns>
-        public static int InputPromptWithConstraints(string prompt, string typeInvalidMessage,int lowerLimit, int upperLimit, string notAcceptibleRangeMessage)
+        public static int InputPromptWithConstraints(string prompt, string typeInvalidMessage, int lowerLimit, int upperLimit, string notAcceptibleRangeMessage)
         {
             bool constraintsSatisfied = false;
             int input = 0;

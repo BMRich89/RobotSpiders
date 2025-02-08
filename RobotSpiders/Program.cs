@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using RobotSpiders;
 using RobotSpiders.Classes;
 using RobotSpiders.Enums;
+using RobotSpiders.Helpers;
 
 ///Capture height and width of wall.
 int height = IntInputPrompt.InputPrompt("Enter height of wall (without unit)", "Input must be integer.");
